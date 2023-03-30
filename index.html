@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="shortcut icon" href="logo_promeo.png" />
     <title>Tentez votre chance</title>
-    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -48,5 +47,23 @@
     <div class='gagnant_perdant' id='gagnant_perdant'>
         <p id='content_gagnant'></p>
     </div>
+
+    <script>
+        const premier = document.getElementById("premier");
+        const second = document.getElementById("second");
+        const troisieme = document.getElementById("troisieme");
+
+        premier.addEventListener("click", function() {
+        premier.style.display = "none";
+        });
+
+        second.addEventListener("click", function() {
+        second.style.display = "none";
+        });
+
+        troisieme.addEventListener("click", function() {
+        troisieme.style.display = "none";
+        });
+    </script>
 </body>
 </html>
