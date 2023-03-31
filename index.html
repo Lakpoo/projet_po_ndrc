@@ -12,35 +12,35 @@
 <body>
     <header>
         <div class="logo">
-            <img src="logo_promeo.png" >
+            <img src="logo_promeo.png" alt="logo">
         </div>
     </header>
 
     <div class="main">
         <div id="title">
-            <h1>Bienvenue à cette journée de Portes Ouvertes !</h1>
+            <p>Bienvenue à cette journée de Portes Ouvertes !</p>
             <p>Cliquez un cadeau pour avoir une chance de remporter un lot.</p>
         </div>
     </div>
-    <div class="num_random">
-        <span id="number"></span>
-    </div>
 
     <div class="all-gift">
-        <div class="premier-gift">
-            <button id="premier">
-                <img src="gift.png" alt="gift">
+        <div class="boxHolder1">
+            <button id="box1" class="boxHolder">
+                <img src="gift.png" alt="gift" class="box">
             </button>
+            <b id="box1_state" class="boxState"></b>
         </div>
-        <div class="second-gift">
-            <button id="second">
-                <img src="gift.png" alt="gift">
+        <div class="boxHolder2">
+            <button id="box2" class="boxHolder">
+                <img src="gift.png" alt="gift" class="box">
             </button>
+            <b id="box2_state" class="boxState"></b>
         </div>
-        <div class="troisieme-gift">
-            <button id="troisieme">
-                <img src="gift.png" alt="gift">
+        <div class="boxHolder3">
+            <button id="box3" class="boxHolder">
+                <img src="gift.png" alt="gift" class="box">
             </button>
+            <b id="box3_state" class="boxState"></b>
         </div>
     </div>
 
@@ -48,22 +48,14 @@
         <p id='content_gagnant'></p>
     </div>
 
-    <script>
-        const premier = document.getElementById("premier");
-        const second = document.getElementById("second");
-        const troisieme = document.getElementById("troisieme");
+    <div class="game">
+        <p>Reste à jouer <b id="remaining">*</b></p>
+        <p class="nombre_gagnant">Gagné: <b id="wined">*</b> / <b id="total_wins">*</b></p>
+        <button id="closeBoxes" onclick="closing()">Refermer et mélanger</button>
+        <button id="restartGame" onclick="restartGame()">Restart Game</button>
+    </div>
 
-        premier.addEventListener("click", function() {
-        premier.style.display = "none";
-        });
-
-        second.addEventListener("click", function() {
-        second.style.display = "none";
-        });
-
-        troisieme.addEventListener("click", function() {
-        troisieme.style.display = "none";
-        });
-    </script>
+    <script src="./script.js"></script>
+    <!-- require dom before script load -->
 </body>
 </html>

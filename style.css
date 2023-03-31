@@ -10,20 +10,19 @@ body {
   height: 100%;
 }
 
-img { 
+.logo > img { 
   width: 17vh;
 }
 
 .logo{
   display: flex;
   justify-content: end;
-  margin: 3rem;
+  margin: 2rem;
 }
 
 .main{
   display: flex;
   justify-content: center;
-  padding-top: 1rem;
 }
 
 #title p{
@@ -56,16 +55,70 @@ img {
 
 button > img{
   width: 30vw;
-  height: 45vh;
+  height: 50vh;
 }
 
-.premier-gift, .second-gift, .troisieme-gift{
+.box1, .box2, .box3{
   width: 30vw;
-  height: 45vh;
+  height: 50vh;
 }
 
-.premier-gift > button, .second-gift > button, .troisieme-gift > button {
+.boxHolder1, .boxHolder2, .boxHolder3{
+  width: 100%;
+}
+
+.boxHolder1 > button, .boxHolder2 > button, .boxHolder3 > button {
   background: none;
   border: none;
 }
 
+.game{
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 8vh;
+}
+
+.game > button{
+  background-color: #ff7b0093;
+  border-radius: 8px;
+  border-style: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5vh;
+  font-weight: 500;
+  height: 5vh;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+
+.game > p{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5vh;
+}
+
+.game > p, .game > button{
+  margin: 10px;
+}
+
+#box1_state.boxState, #box2_state.boxState, #box3_state.boxState{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8vh;
+  margin-top: 25vh;
+  justify-content: center;
+}
+
+.nombre_gagnant{
+  display: none;
+}
+
+#restartGame{
+  display: none;
+}
