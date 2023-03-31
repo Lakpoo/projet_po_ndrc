@@ -119,6 +119,10 @@ button > img{
   display: none;
 }
 
+.ajouer{
+  display: none;
+}
+
 #restartGame{
   display: none;
 }
