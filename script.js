@@ -6,7 +6,7 @@ const closeElement = document.getElementById("closeBoxes");
 const restartElement = document.getElementById("restartGame");
 
 let settings = {
-    tickets: 300,
+    tickets: 30,
     winners: 3
 }
 let state = {
@@ -17,7 +17,7 @@ let state = {
     numbers_win: []
 }
 
-function updateState () {
+function updateState() {
     remainingElement.innerText = state.remaining;
     winedElement.innerText = state.wined;
     totalWinsElement.innerText = settings.winners;
@@ -34,10 +34,10 @@ for (let i = 0; i < settings.winners; i++) {
     state.numbers_win.push(number);
 }
 
-function restartGame () {
+function restartGame() {
     window.location.reload();
 }
-function closing () {
+function closing() {
     settings.havePlayed = false;
     closeElement.style.display = "none";
 
@@ -50,7 +50,7 @@ function closing () {
     // remet les cadeaux en visibilité
 }
 
-function handler (id) {
+function handler(id) {
     if (settings.havePlayed)
         return;
 
